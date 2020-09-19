@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30509.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoronaLight", "CoronaLight\CoronaLight.csproj", "{42C10E2B-806D-451A-9794-19719AD512EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x64.ActiveCfg = Debug|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x64.Build.0 = Debug|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x64.Deploy.0 = Debug|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x86.ActiveCfg = Debug|x86
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x86.Build.0 = Debug|x86
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Debug|x86.Deploy.0 = Debug|x86
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x64.ActiveCfg = Release|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x64.Build.0 = Release|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x64.Deploy.0 = Release|x64
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x86.ActiveCfg = Release|x86
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x86.Build.0 = Release|x86
+		{42C10E2B-806D-451A-9794-19719AD512EC}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD199AA6-2AEB-4639-9A28-67B8FB132DFD}
+	EndGlobalSection
+EndGlobal
