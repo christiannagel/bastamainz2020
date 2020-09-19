@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TopLevelPrograms": {
+      "commandName": "Project",
+      "commandLineArgs": "add 3 4 5"
+    }
+  }
+}
