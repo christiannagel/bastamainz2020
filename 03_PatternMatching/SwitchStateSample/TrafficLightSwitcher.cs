@@ -50,7 +50,7 @@ namespace SwitchStateSample
                 (Red, _, _)                => (Yellow, currentLight, 0),
                 (Yellow, Red, _)           => (Green, currentLight, 0),
                 (Green, _, _)              => (FlashingGreen, currentLight, 0),
-                (FlashingGreen, _, >= 2)      => (Yellow, currentLight, 0),
+                (FlashingGreen, _, >= 2)   => (Yellow, currentLight, 0),
                 (FlashingGreen, _, _)      => (FlashingGreen, currentLight, ++currentCount),
                 (Yellow, FlashingGreen, _) => (Red, currentLight, 0),
                 _                          => (FlashingYellow, currentLight, 0)
