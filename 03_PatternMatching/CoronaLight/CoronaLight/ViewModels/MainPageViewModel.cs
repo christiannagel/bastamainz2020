@@ -1,6 +1,5 @@
 ﻿using CoronaLight.Models;
 using Microsoft.Toolkit.Mvvm.ComponentModel;
-using System.Linq;
 using static CoronaLight.Models.LightState;
 
 namespace CoronaLight.ViewModels
@@ -14,14 +13,7 @@ namespace CoronaLight.ViewModels
             _lightInput.PropertyChanged += (sender, e) =>
             {
                 OnPropertyChanged(nameof(LightState));
-                //var propertyNames = new[] { "Reproduction", "SickPer1000", "HospitalUtilization" };
-                //if (propertyNames.Contains(e.PropertyName))
-                //{
-                //    OnPropertyChanged(nameof(LightState));
-                //}
-
             };
-
         }
 
         public LightInput LightInput => _lightInput;
@@ -45,9 +37,10 @@ namespace CoronaLight.ViewModels
         private LightState GetLightState(LightInput lightInput) =>
             lightInput switch
             {
+                { HospitalUtilization: > 40 } => Red,
                 { Reproduction: < 0.5, SickPer1000: < 10, HospitalUtilization: < 5 }  => Green,
-                { Reproduction: < 1.1, SickPer1000: < 100, HospitalUtilization: < 20 } => Yellow,
-                { Reproduction: < 2, SickPer1000: < 1000, HospitalUtilization: < 40 } => Orange,
+                { Reproduction: < 1.1, SickPer1000: < 100, HospitalUtilization: < 15 } => Yellow,
+                { Reproduction: < 2, SickPer1000: < 300, HospitalUtilization: < 30 } => Orange,
                 _ => Red
             };
 

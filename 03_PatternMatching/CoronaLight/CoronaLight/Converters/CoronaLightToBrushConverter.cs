@@ -6,13 +6,15 @@ using System;
 
 namespace CoronaLight.Converters
 {
+#nullable enable
+
     public class CoronaLightToBrushConverter : IValueConverter
     {
-        private readonly Brush _redBrush = new SolidColorBrush(Colors.Red);
-        private readonly Brush _yellowBrush = new SolidColorBrush(Colors.Yellow);
-        private readonly Brush _orangeBursh = new SolidColorBrush(Colors.Orange);
-        private readonly Brush _greenBrush = new SolidColorBrush(Colors.Green);
-        private readonly Brush _blackBrush = new SolidColorBrush(Colors.Black);
+        private static readonly Brush _redBrush = new SolidColorBrush(Colors.Red);
+        private static readonly Brush _yellowBrush = new SolidColorBrush(Colors.Yellow);
+        private static readonly Brush _orangeBursh = new SolidColorBrush(Colors.Orange);
+        private static readonly Brush _greenBrush = new SolidColorBrush(Colors.Green);
+        private static readonly Brush _blackBrush = new SolidColorBrush(Colors.Black);
 
         public object? Convert(object value, Type targetType, object parameter, string language)
         {
@@ -32,4 +34,6 @@ namespace CoronaLight.Converters
 
         public object? ConvertBack(object value, Type targetType, object parameter, string language) => throw new InvalidOperationException();
     }
+
+#nullable restore
 }

@@ -27,11 +27,7 @@ if (b1 == b3)
 
 var b4 = b1 with { Title = "Professional C# 9" };
 
-var b5 = new Book(b4);
-
 Console.WriteLine($"{b4.Title} {b4.Publisher}");
 
 var rect = new Rectangle(new Position(10, 10), 200, 100);
 Console.WriteLine(rect);
-
-
