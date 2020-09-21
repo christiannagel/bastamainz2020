@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Records
+﻿namespace Records
 {
     record Position(int X, int Y) 
     {

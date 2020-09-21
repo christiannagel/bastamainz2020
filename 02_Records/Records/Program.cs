@@ -1,7 +1,5 @@
 ﻿using Records;
 using System;
-using System.Runtime.InteropServices;
-using System.Runtime.Serialization;
 
 var b1 = new Book("Professional C# 7", "Wrox Press");
 Console.WriteLine(b1.Title);
@@ -9,7 +7,6 @@ Console.WriteLine(b1.Title);
 var b2 = new Book("Professional C# 7", "Wrox Press") { Isbn = "987-1-119-44927-0" };
 
 // deconstruct
-
 (var title, _, _) = b1;
 Console.WriteLine(title);
 
