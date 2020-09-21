@@ -38,7 +38,7 @@ namespace CoronaLight.ViewModels
             lightInput switch
             {
                 { HospitalUtilization: > 40 } => Red,
-                { Reproduction: < 0.5, SickPer1000: < 10, HospitalUtilization: < 5 }  => Green,
+                { Reproduction: < 0.5, SickPer1000: < 10, HospitalUtilization: < 5 } or { PoliticalInfluence: > 80 } => Green,
                 { Reproduction: < 1.1, SickPer1000: < 100, HospitalUtilization: < 15 } => Yellow,
                 { Reproduction: < 2, SickPer1000: < 300, HospitalUtilization: < 30 } => Orange,
                 _ => Red
@@ -51,8 +51,7 @@ namespace CoronaLight.ViewModels
                 Orange => Yellow,
                 Yellow => Green,
                 _ => Green
-            };
-    
+            };    
 
         private bool _isAdvanced;
         public bool IsAdvanced
